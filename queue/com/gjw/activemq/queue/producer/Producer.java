@@ -22,9 +22,9 @@ public class Producer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String user = ActiveMQConnection.DEFAULT_USER;
-		String password = ActiveMQConnection.DEFAULT_PASSWORD;
-		String url = ActiveMQConnection.DEFAULT_BROKER_URL;
+		String user = "admin";
+		String password = "admin";
+		String url = "tcp://192.168.1.147:61616";
 		//点对点queue名称
 		String queueName = "FirstQueue";
 		ConnectionFactory contectionFactory = new ActiveMQConnectionFactory( user, password, url);
